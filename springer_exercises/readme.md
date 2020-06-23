@@ -1,1 +1,1 @@
-practice exercises from the springer book
+practice exercises from the book "The Python Workbook"
