@@ -2,7 +2,7 @@
 # minutes, and seconds. Compute and display the total number of seconds represented
 # by this duration.
 
-days = 2s
+days = 2
 hours = 1
 minutes = 1
 seconds = 1
