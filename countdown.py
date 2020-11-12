@@ -36,8 +36,7 @@ while s > -1:
         if value == 0:
             break
 
-    str_out = '\r' + "{:02d}:".format(output["days"]) + "{:02d}:".format(output["hours"]) + "{:02d}:".format(
-        output["minutes"]) + "{:02d}".format(output["seconds"])
+    str_out = '\r' + f"{output['days']:02}:{output['hours']:02}:{output['minutes']:02}:{output['seconds']:02}"
     # str_out = '\r'+str(s)
     print(str_out, end='', flush=True)
     s = s - 1
@@ -45,3 +44,4 @@ while s > -1:
     sleep(1)
 
 print("\nCountdown Complete.")
+
