@@ -1,14 +1,10 @@
-# Create a program that reads a duration from the user as a number of days, hours,
-# minutes, and seconds. Compute and display the total number of seconds represented
-# by this duration.
+# Write a program that reads s and n from the user and then displays the area of a
+# regular polygon constructed from these values.
 
-days = 2s
-hours = 1
-minutes = 1
-seconds = 1
+import math
+s = 4
+n = 4
+pi = 3.14159265358979
 
-hours = hours + (days * 24)
-minutes = minutes + (hours * 60)
-seconds = seconds + (minutes *60)
-
-print(seconds)
+a = ((n*(s **2))/(4*math.tan(pi/n)))
+print(a)
