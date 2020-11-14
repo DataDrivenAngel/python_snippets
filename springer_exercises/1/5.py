@@ -19,3 +19,4 @@ large_input = int(input("How many bottles with size greater than one liter do yo
 refund = (small_input*small_bottle_deposit) + (large_input*large_bottle_deposit)
 
 print("Your refund will be $"+ format(refund, '.2f'))
+print("Refundo: $%.2f." % refund)

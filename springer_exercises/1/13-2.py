@@ -4,7 +4,6 @@
 # should be given using as few coins as possible. Assume that the machine is loaded
 # with pennies, nickels, dimes, quarters, loonies and toonies.
 
-
 original_input = 369
 
 coins = {
@@ -15,6 +14,7 @@ coins = {
     "nickle"  : 5,
     "penny"   : 1
 }
+
 
 change = {
     "loonie"  : 0,
@@ -27,14 +27,14 @@ change = {
 value = 0
 input = original_input
 
-while value <= input:
-    for c in coins:
-         print(c)
-         while coins[c] <= input:
-            print(input)
-            input = input - coins[c]
-            change[c] = change[c] +1
-            value = value + coins[c]
+
+for c in coins:
+
+    change[c] = input // coins[c]
+    value = value + ((input // coins[c]) * coins[c])
+    input = input % coins[c]
+
+
 
 print ("input was", original_input)
 print(change)
