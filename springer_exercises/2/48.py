@@ -2,3 +2,18 @@
 # with that year. Your program should work correctly for any year greater than or equal
 # to zero, not just the ones listed in the table
 
+animals = [
+    "Dragon",
+    "Snake",
+    "Horse",
+    "Sheep",
+    "Monkey",
+    "Rooster",
+    "Dog",
+    "Pig",
+    "Rat",
+    "Ox",
+    "Tiger",
+    "Hare"
+
+]
