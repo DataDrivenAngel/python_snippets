@@ -15,5 +15,11 @@ animals = [
     "Ox",
     "Tiger",
     "Hare"
-
 ]
+
+input_year = 2005
+
+year = (input_year - 2000) % 12
+# 2000 = year of the dwagon
+
+print(f"year {input_year} is the year of the {animals[year]} !")
